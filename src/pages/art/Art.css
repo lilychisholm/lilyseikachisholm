@@ -1,0 +1,86 @@
+.art-page-container {
+    display: flex;
+}
+
+.art-text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+    position: absolute;
+    top: 80vh;
+    left: 5%;
+    float: left;
+    flex-direction: column;
+}
+
+.art-title {
+    font-family: 'DIGILFS';
+    font-size: 10vw;
+    color: #B0D4FF;
+    z-index: 101;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.art-subtitle {
+    font-family: 'GAU_pop_magic';
+    font-size: 2vw;
+    color: #333;
+    z-index: 101;
+    width: 30%;
+    text-align: left;
+    margin-top: -15%;
+}
+
+.art-page .footer {
+    margin-top: 200%;
+}
+
+.swirlgirl {
+    justify-content: flex-start;
+    position: absolute;
+    float: left;
+    width: 60%;
+    z-index: 0;
+    top: 65vh;
+    left: -30vh;
+}
+
+@media (max-width: 768px) {
+    .art-text-container {
+        top: 80vh;
+        left: 2%;
+    }
+    
+    .art-subtitle {
+        width: 80%;
+        font-size: 4vw;
+        margin-top: -5%;
+    }
+
+    .swirlgirl {
+        width: 90%;
+        top: 65vh;
+        left: -10vh;
+    }
+}
+
+.art-page .cloud6 {
+    display: none;
+}
+
+.graph-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 0;
+    left: 0%;
+    opacity: 0.1;
+    top: 0%;
+}

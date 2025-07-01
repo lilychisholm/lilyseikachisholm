@@ -1,0 +1,111 @@
+.code-page-container {
+    display: flex;
+}
+
+.code-text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+    position: absolute;
+    top: 85vh;
+    left: 5%;
+    float: left;
+    flex-direction: row;
+}
+
+.code-title {
+    font-family: 'DIGILF';
+    font-size: 10vw;
+    color: #333;
+    z-index: 101;
+    font-weight: 100;
+    line-height: 0.7;
+}
+
+.code-subtitle {
+    font-family: 'GAU_pop_magic';
+    font-size: 2vw;
+    color: #333;
+    z-index: 101;
+    width: 30%;
+    text-align: left;
+    transform: rotate(90deg);
+    margin-top: 35%;
+}
+
+.code-page .footer {
+    margin-top: 200%;
+}
+
+.card1 {
+    position: absolute;
+    z-index: 10;
+    top: 110%;
+    left: 30%;
+}
+
+.card2 {
+    position: absolute;
+    z-index: 10;
+    top: 130%;
+    left: 60%
+}
+
+.card3 {
+    position: absolute;
+    z-index: 10;
+    top: 190%;
+    left: 35%
+}
+
+.card4 {
+    position: absolute;
+    z-index: 10;
+    top: 175%;
+    left: 5%
+}
+
+.card5 {
+    position: absolute;
+    z-index: 10;
+    top: 200%;
+    left: 70%
+}
+
+.card6 {
+    position: absolute;
+    z-index: 10;
+    top: 260%;
+    left: 15%
+}
+
+
+@media (max-width: 768px) {
+    .code-text-container {
+        top: 80vh;
+        left: 2%;
+        width: 100%;
+        font-size: 10vw;
+    }
+    
+    .code-subtitle {
+        width: 80%;
+        font-size: 3vw;
+        transform: rotate(0deg);
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+
+    .code-title {
+        font-size: 20vw;
+    }
+    .code-page .marquee {
+        font-size: 11.5vw !important;
+    }
+}
+
+.code-page .marquee {
+    font-family: 'DIGILF';
+    font-size: 3.8vw;
+}
