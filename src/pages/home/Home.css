@@ -2,7 +2,7 @@
     width: 100vw;
     height: 8vh;
     left: 0;
-    bottom: 6%;
+    bottom: 6% !important;
     position: absolute;
     font-family: 'IONICBON';
     z-index: 10;
