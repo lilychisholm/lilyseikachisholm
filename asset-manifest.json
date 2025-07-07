@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/lilyseikachisholm/static/css/main.d797f1a8.css",
-    "main.js": "/lilyseikachisholm/static/js/main.60ed779e.js",
+    "main.css": "/lilyseikachisholm/static/css/main.257170b5.css",
+    "main.js": "/lilyseikachisholm/static/js/main.e181ee49.js",
     "static/js/453.534db5b8.chunk.js": "/lilyseikachisholm/static/js/453.534db5b8.chunk.js",
+    "static/media/website.png": "/lilyseikachisholm/static/media/website.0313195766625cae0f42.png",
+    "static/media/scambuster.png": "/lilyseikachisholm/static/media/scambuster.399597d6e9be8ffd09c9.png",
     "static/media/chickfila.png": "/lilyseikachisholm/static/media/chickfila.f9ef5add69d5451ad8fa.png",
     "static/media/blueEllipse.png": "/lilyseikachisholm/static/media/blueEllipse.d190273f6fe10460420f.png",
     "static/media/swirlgirl.png": "/lilyseikachisholm/static/media/swirlgirl.243044a6dc8cc5f220eb.png",
@@ -21,15 +23,19 @@
     "static/media/Cloud.svg": "/lilyseikachisholm/static/media/Cloud.5760a8938e01f1c8a588344d63ce572c.svg",
     "static/media/cloud6.svg": "/lilyseikachisholm/static/media/cloud6.cce715881a67be3e175856caaa8e0a69.svg",
     "static/media/cloud2.svg": "/lilyseikachisholm/static/media/cloud2.163e28f6efd30b7c70723a3730ac515b.svg",
+    "static/media/github.svg": "/lilyseikachisholm/static/media/github.4277c533d26caa893b74e44f7140acc1.svg",
     "static/media/cloud3.svg": "/lilyseikachisholm/static/media/cloud3.c1f015985aa760452329811247b9b591.svg",
     "static/media/cloud1.svg": "/lilyseikachisholm/static/media/cloud1.8e16b91f2f83a97dcc331044a9dd8e25.svg",
+    "static/media/instagram.svg": "/lilyseikachisholm/static/media/instagram.f952f2086f6ceb2131f01338eb836f00.svg",
+    "static/media/email.svg": "/lilyseikachisholm/static/media/email.b66e13efe03004bb0a377236ba75e297.svg",
+    "static/media/linkedin.svg": "/lilyseikachisholm/static/media/linkedin.2613cdf234991fc42bc2ff6865b3a876.svg",
     "index.html": "/lilyseikachisholm/index.html",
-    "main.d797f1a8.css.map": "/lilyseikachisholm/static/css/main.d797f1a8.css.map",
-    "main.60ed779e.js.map": "/lilyseikachisholm/static/js/main.60ed779e.js.map",
+    "main.257170b5.css.map": "/lilyseikachisholm/static/css/main.257170b5.css.map",
+    "main.e181ee49.js.map": "/lilyseikachisholm/static/js/main.e181ee49.js.map",
     "453.534db5b8.chunk.js.map": "/lilyseikachisholm/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d797f1a8.css",
-    "static/js/main.60ed779e.js"
+    "static/css/main.257170b5.css",
+    "static/js/main.e181ee49.js"
   ]
 }
