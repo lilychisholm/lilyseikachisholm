@@ -11,6 +11,7 @@ const Home = () => {
                 direction="left" 
                 className="marquee-home"
                 loop={0}
+                autoFill={true}
                 speed={150}
                 >
                 ll@•pet•ad).]•ll@•pet•ad).]•
