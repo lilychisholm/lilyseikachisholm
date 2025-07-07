@@ -25,6 +25,13 @@
     font-weight: normal;
     font-style: normal;
   }
+@font-face {
+  font-family: 'Aristotelica-Regular';
+  src: url('../../fonts/Aristotelica-Display-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .base-template {
     min-height: 100vh;

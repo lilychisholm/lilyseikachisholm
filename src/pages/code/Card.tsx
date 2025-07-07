@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { motion, useSpring } from 'framer-motion';
 import './Card.css';
 
-export default function Card() {
+interface CardProps {
+    children?: React.ReactNode;
+}
+
+export default function Card({ children }: CardProps) {
     const [isDragging, setIsDragging] = useState(false);
-    const x = useSpring(0, { stiffness: 500, damping: 30 });
-    const y = useSpring(0, { stiffness: 500, damping: 30 });
+    const x = useSpring(10, { stiffness: 500, damping: 30 });
+    const y = useSpring(10, { stiffness: 500, damping: 30 });
 
     return (
         <motion.div
@@ -20,13 +24,11 @@ export default function Card() {
             onDragStart={() => setIsDragging(true)}
             onDragEnd={() => {
                 setIsDragging(false);
-                x.set(0);
-                y.set(0);
+                x.set(10);
+                y.set(10);
             }}
         >
-            <div className="card-content">
-                <h1>Card</h1>
-            </div>
+            {children}
         </motion.div>
     );
 }
