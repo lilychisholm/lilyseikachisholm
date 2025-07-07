@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/lilyseikachisholm/static/css/main.c9628082.css",
+    "main.js": "/lilyseikachisholm/static/js/main.d0a1ffa3.js",
+    "static/js/453.534db5b8.chunk.js": "/lilyseikachisholm/static/js/453.534db5b8.chunk.js",
+    "static/media/chickfila.png": "/lilyseikachisholm/static/media/chickfila.f9ef5add69d5451ad8fa.png",
+    "static/media/blueEllipse.png": "/lilyseikachisholm/static/media/blueEllipse.d190273f6fe10460420f.png",
+    "static/media/swirlgirl.png": "/lilyseikachisholm/static/media/swirlgirl.243044a6dc8cc5f220eb.png",
+    "static/media/yellowEllipse.png": "/lilyseikachisholm/static/media/yellowEllipse.dac4c4bd9464b5f6ac67.png",
+    "static/media/Aristotelica-Display-Regular-trial.ttf": "/lilyseikachisholm/static/media/Aristotelica-Display-Regular-trial.42c60a5f7d61fe7c623b.ttf",
+    "static/media/internalnote.png": "/lilyseikachisholm/static/media/internalnote.4d7d9926255bb6ebff02.png",
+    "static/media/avatar.png": "/lilyseikachisholm/static/media/avatar.6e515f800e9908b016be.png",
+    "static/media/moneyparse.png": "/lilyseikachisholm/static/media/moneyparse.dffdd9e53733d034b3d1.png",
+    "static/media/GAU_pop_magic.TTF": "/lilyseikachisholm/static/media/GAU_pop_magic.819a63555ea9b0f6ecaf.TTF",
+    "static/media/DIGILFS_.TTF": "/lilyseikachisholm/static/media/DIGILFS_.6999e8819f6c2a11a118.TTF",
+    "static/media/DIGILF__.TTF": "/lilyseikachisholm/static/media/DIGILF__.b26274cbcb2c6cf60519.TTF",
+    "static/media/IONICBON.TTF": "/lilyseikachisholm/static/media/IONICBON.204da2a8ecbd2d8c3f7f.TTF",
+    "static/media/graph.svg": "/lilyseikachisholm/static/media/graph.fa5ed044675f27431e53ac2fb24c274b.svg",
+    "static/media/cloud4.svg": "/lilyseikachisholm/static/media/cloud4.d4ab5490518feddfcaa9ad99e902094a.svg",
+    "static/media/cloud5.svg": "/lilyseikachisholm/static/media/cloud5.3fafa92b528c9f1801b4701460385285.svg",
+    "static/media/Cloud.svg": "/lilyseikachisholm/static/media/Cloud.5760a8938e01f1c8a588344d63ce572c.svg",
+    "static/media/cloud6.svg": "/lilyseikachisholm/static/media/cloud6.cce715881a67be3e175856caaa8e0a69.svg",
+    "static/media/cloud2.svg": "/lilyseikachisholm/static/media/cloud2.163e28f6efd30b7c70723a3730ac515b.svg",
+    "static/media/cloud3.svg": "/lilyseikachisholm/static/media/cloud3.c1f015985aa760452329811247b9b591.svg",
+    "static/media/cloud1.svg": "/lilyseikachisholm/static/media/cloud1.8e16b91f2f83a97dcc331044a9dd8e25.svg",
+    "index.html": "/lilyseikachisholm/index.html",
+    "main.c9628082.css.map": "/lilyseikachisholm/static/css/main.c9628082.css.map",
+    "main.d0a1ffa3.js.map": "/lilyseikachisholm/static/js/main.d0a1ffa3.js.map",
+    "453.534db5b8.chunk.js.map": "/lilyseikachisholm/static/js/453.534db5b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9628082.css",
+    "static/js/main.d0a1ffa3.js"
+  ]
+}
