@@ -13,6 +13,10 @@ import Cloud3 from '../../images/cloud3.svg';
 import Cloud4 from '../../images/cloud4.svg';
 import Cloud5 from '../../images/cloud5.svg';
 import Cloud6 from '../../images/cloud6.svg';
+import instagram from '../../images/instagram.svg';
+import linkedin from '../../images/linkedin.svg';
+import github from '../../images/github.svg';
+import email from '../../images/email.svg';
 
 type BaseTemplateProps = {
   children?: any;
@@ -57,12 +61,28 @@ const BaseTemplate = ({ children, marqueeText = "ll@•pet•ad).]•ll@•pet�
         <img src={Cloud4} alt="Cloud 4" className="cloud4" />
         <img src={Cloud5} alt="Cloud 5" className="cloud5" />
         <img src={Cloud6} alt="Cloud 6" className="cloud6" />
+        <div className='socials'>
+          <a href='https://www.linkedin.com/in/lilychisholm' style={{'zIndex': 100 }}>
+            <img src={linkedin} alt="linkedin" className="linkedin"/>
+          </a>
+          <a href='https://www.instagram.com/lavindex' style={{'zIndex': 100 }}>
+            <img src={instagram} alt="instagram" className="instagram"/>
+          </a>
+          <a  href='https://www.github.com/lilychisholm' style={{'zIndex': 100 }}>
+            <img src={github} alt="github" className="github"/>
+          </a>
+          <a  href='lchisholm30@gatech.edu' style={{'zIndex': 100 }}>
+            <img src={email} alt="email" className="email"/>
+          </a>
+        </div>
+        
+        
       <header className="header">
         <Marquee 
                 direction="right" 
                 className="marquee"
                 loop={0}
-                autofill={true}
+                autoFill={true}
                 speed={150}
             >
                 {marqueeText}
