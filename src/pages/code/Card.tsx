@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { motion, useSpring } from 'framer-motion';
 import './Card.css';
+import type { ReactNode } from 'react';
 
 interface CardProps {
-    children?: React.ReactNode;
+    children?: ReactNode;
 }
 
 export default function Card({ children }: CardProps) {
