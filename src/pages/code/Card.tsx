@@ -22,6 +22,7 @@ export default function Card({ children }: CardProps) {
                 y,
                 cursor: isDragging ? 'grabbing' : 'grab'
             }}
+            whileHover={{ scale: 1.05 }} // or 1.5 if you want it very large
             onDragStart={() => setIsDragging(true)}
             onDragEnd={() => {
                 setIsDragging(false);

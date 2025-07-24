@@ -17,13 +17,15 @@ import instagram from '../../images/instagram.svg';
 import linkedin from '../../images/linkedin.svg';
 import github from '../../images/github.svg';
 import email from '../../images/email.svg';
+import Graph from '../../images/graph.svg';
 
 type BaseTemplateProps = {
   children?: any;
   marqueeText?: string;
+  isArtPage?: boolean;
 }
 
-const BaseTemplate = ({ children, marqueeText = "ll@•pet•ad).]•ll@•pet•ad).]•" }: BaseTemplateProps) => {
+const BaseTemplate = ({ children, marqueeText = "ll@•pet•ad).]•ll@•pet•ad).]•", isArtPage }: BaseTemplateProps) => {
   const [dimensions, setDimensions] = useState({
     cx: window.innerWidth <= 768 ? window.innerWidth * 0.5 : window.innerWidth * 0.35,
     cy: window.innerWidth <= 768 ? window.innerWidth * 0.45 : window.innerWidth * 0.35,
@@ -47,11 +49,6 @@ const BaseTemplate = ({ children, marqueeText = "ll@•pet•ad).]•ll@•pet�
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-//   const [home, setHome] = useState(true);
-//   const [art, setArt] = useState(false);
-//   const [code, setCode] = useState(false);
-//   const [about, setAbout] = useState(false);
-
   return (
     <div className="base-template">
         <img src={Cloud} alt="Cloud" className="cloud" />
@@ -61,22 +58,9 @@ const BaseTemplate = ({ children, marqueeText = "ll@•pet•ad).]•ll@•pet�
         <img src={Cloud4} alt="Cloud 4" className="cloud4" />
         <img src={Cloud5} alt="Cloud 5" className="cloud5" />
         <img src={Cloud6} alt="Cloud 6" className="cloud6" />
-        <div className='socials'>
-          <a href='https://www.linkedin.com/in/lilychisholm' style={{'zIndex': 100 }}>
-            <img src={linkedin} alt="linkedin" className="linkedin"/>
-          </a>
-          <a href='https://www.instagram.com/lavindex' style={{'zIndex': 100 }}>
-            <img src={instagram} alt="instagram" className="instagram"/>
-          </a>
-          <a  href='https://www.github.com/lilychisholm' style={{'zIndex': 100 }}>
-            <img src={github} alt="github" className="github"/>
-          </a>
-          <a  href='lchisholm30@gatech.edu' style={{'zIndex': 100 }}>
-            <img src={email} alt="email" className="email"/>
-          </a>
-        </div>
-        
-        
+      {isArtPage && (
+        <img src={Graph} alt="Graph Background" className="art-background-graph" />
+      )}
       <header className="header">
         <Marquee 
                 direction="right" 
@@ -87,6 +71,20 @@ const BaseTemplate = ({ children, marqueeText = "ll@•pet•ad).]•ll@•pet�
             >
                 {marqueeText}
             </Marquee>
+            <div className='socials'>
+              <a href='https://www.linkedin.com/in/lilychisholm' style={{'zIndex': 100 }}>
+                <img src={linkedin} alt="linkedin" className="linkedin"/>
+              </a>
+              <a href='https://www.instagram.com/lavindex' style={{'zIndex': 100 }}>
+                <img src={instagram} alt="instagram" className="instagram"/>
+              </a>
+              <a  href='https://www.github.com/lilychisholm' style={{'zIndex': 100 }}>
+                <img src={github} alt="github" className="github"/>
+              </a>
+              <a  href='lchisholm30@gatech.edu' style={{'zIndex': 100 }}>
+                <img src={email} alt="email" className="email"/>
+              </a>
+            </div>
             <div className="header-image">
                 <div className="name-container">
                     <ReactCurvedText
@@ -123,9 +121,9 @@ const BaseTemplate = ({ children, marqueeText = "ll@•pet•ad).]•ll@•pet�
         {children}
       </main>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Lily Chisholm. All rights reserved.</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };

@@ -1,3 +1,8 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'DIGILFS';
   src: url('../../fonts/DIGILFS_.TTF') format('truetype');
@@ -36,19 +41,21 @@
 .base-template {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: #ffffff;
-  }
+    width: 100%;
+    overflow-x: hidden;
+}
 
   .header {
     background-color: #ffffff;
     flex-direction: column;
     justify-content: center;
     display: flex;
-    position: absolute;
-    width: 100vw;
+    width: 100%;
     align-items: center;
-    height: 80vh;
-    top: 8%;
+    min-height: 20vh;
+    margin-top: 3%;
   }
 
   .name-container {
@@ -127,7 +134,8 @@
   
   @media (max-width: 768px) {
     .marquee {
-        font-size: 10vw !important;
+      font-size: 10vw !important;
+      top: 20% !important;
     }
     .nav {
       gap: 1rem;
@@ -147,10 +155,13 @@
         transform: translateY(-10%);
     }
     .footer {
-        position: absolute;
         font-size: 3vw;
-        margin-right: 35%;
+        margin-right: 0;
         justify-self: center;
+        min-height: 40px;
+    }
+    .header {
+        min-height: 15vh;
     }
     .cloud {
         width: 100vw !important;
@@ -188,54 +199,42 @@
         left: 0% !important;
     }
     .socials {
-      display: flex;
-      position: absolute;
-      flex-direction: row;
-      gap: 3vw !important;
-      right: 2vw;
-      top: 7vw;
+      width: 40%;
+      top: 5%;
+      right: 2%;
+      gap: 2vw;
     }
-  
-    .linkedin {
-      width: 8vw !important;
-      color: black;
-      z-index: 110
-    }
-    .email {
-      width: 8vw !important;
-      width: 2vw;
-      color: black;
-      z-index: 110
-    }
-    .instagram {
-      width: 8vw !important;
-      width: 2vw;
-      color: black;
-      z-index: 110
-    }
+    .linkedin,
+    .email,
+    .instagram,
     .github {
-      width: 8vw !important;
-      width: 2vw;
-      color: black;
-      z-index: 110
+      width: 30%;
+      max-width: 36px;
+      min-width: 18px;
     }
-  
+    .marquee-home {
+      top: -10vw;
+    }
   }
   
   .main-content {
-    flex: 1;
+    flex: 1 1 auto;
     padding: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    overflow: auto;
   }
   
   .footer {
     text-align: center;
-    position: absolute;
-    bottom: 0%;
-    margin-left: 41%;
-    top: 105%;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background: #fff;
+    z-index: 10;
   }
   .marquee {
     position: absolute;
@@ -250,37 +249,30 @@
         1px 1px 0 #000;
     letter-spacing: 0.1em;
     font-size: 3.3vw;
-    top: -5%;
   }
 
   .socials {
-    display: flex;
     position: absolute;
+    width: 30%;
+    right: 5%;
+    top: 15%;
+    display: flex;
     flex-direction: row;
     gap: 1vw;
-    right: 2vw;
-    top: 7vw;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 110;
   }
 
-  .linkedin {
-    width: 2vw;
-    color: black;
-    z-index: 110
-  }
-  .email {
-    width: 2vw;
-    color: black;
-    z-index: 110
-  }
-  .instagram {
-    width: 2vw;
-    color: black;
-    z-index: 110
-  }
+  .linkedin,
+  .email,
+  .instagram,
   .github {
-    width: 2.25vw;
+    width: 25%; /* Each icon is 25% of the .socials width, so 4 icons fit nicely */
+    max-width: 48px;
+    min-width: 24px;
     color: black;
-    z-index: 110
+    z-index: 110;
   }
 
   .cloud {
@@ -330,3 +322,15 @@
     z-index: 1;
     width: 35vw;
   }
+
+.art-background-graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.08;
+  pointer-events: none;
+}

@@ -1,5 +1,61 @@
-.code-page-container {
+.code-page {
     display: flex;
+    flex-direction: column;
+}
+.code-page-container {
+    display: grid;
+    justify-content: center;
+    width: 80vw;
+    justify-content: right;
+    margin-left: 8vw;
+    margin-top: 50%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 90%;
+    z-index: 10;
+}
+
+.cards-container {
+  margin-top: -55%;
+  align-self: center;
+  margin-left: 11%;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    flex: 1 1 300px;
+    min-width: 300px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.card {
+    width: 100%;
+    min-height: 350px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.cardcontent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
 }
 
 .code-text-container {
@@ -21,7 +77,7 @@
     font-family: 'DIGILF';
     font-size: 10vw;
     color: #333;
-    z-index: 101;
+    z-index: 1;
     font-weight: 100;
     line-height: 0.7;
 }
@@ -30,7 +86,7 @@
     font-family: 'GAU_pop_magic';
     font-size: 2vw;
     color: #333;
-    z-index: 101;
+    z-index: 1;
     width: 30%;
     text-align: left;
     transform: rotate(90deg);
@@ -41,15 +97,6 @@
     margin-top: 200%;
 }
 
-.card1 {
-    position: absolute;
-    z-index: 10;
-    top: 100%;
-    left: 20%;
-    font-family: 'Arial';
-    display: flex;
-    justify-content: center;
-}
 
 .text1 {
     width: 90%;
@@ -59,14 +106,6 @@
     line-height: 1.25vw
 }
 
-.card2 {
-    position: absolute;
-    z-index: 10;
-    top: 100%;
-    left: 60%;
-    display: flex;
-    justify-content: center;
-}
 
 .text2 {
     text-align: left;
@@ -76,14 +115,6 @@
     padding-top: 1vw;
 }
 
-.card3 {
-    position: absolute;
-    z-index: 10;
-    top: 190%;
-    left: 35%;
-    display: flex;
-    justify-content: center;
-}
 
 .text3 {
     text-align: left;
@@ -93,14 +124,6 @@
     padding-top: 1vw;
 }
 
-.card4 {
-    position: absolute;
-    z-index: 10;
-    top: 175%;
-    left: 3%;
-    display: flex;
-    justify-content: center;
-}
 
 .text4 {
     text-align: left;
@@ -108,24 +131,6 @@
     width: 90%;
     line-height: 1.25vw;
     padding-top: 1vw;
-}
-
-.card5 {
-    position: absolute;
-    z-index: 10;
-    top: 180%;
-    left: 67%;
-    display: flex;
-    justify-content: center;
-}
-
-.card6 {
-    position: absolute;
-    z-index: 10;
-    top: 265%;
-    left: 15%;
-    display: flex;
-    justify-content: center;
 }
 
 .text6 {
@@ -138,6 +143,9 @@
 
 
 @media (max-width: 768px) {
+    .cards-container {
+        margin-left: 2% !important;
+      }
     .code-text-container {
         top: 80vh;
         left: 2%;
@@ -146,11 +154,7 @@
     }
     
     .code-subtitle {
-        width: 80%;
-        font-size: 3vw;
-        transform: rotate(0deg);
-        margin-top: 5%;
-        margin-left: 15%;
+        visibility: hidden;
     }
 
     h1 {
@@ -171,18 +175,7 @@
     }
 
     .card {
-        width: 300px !important;
-    }
-
-    .card1 {
-        position: absolute;
-        height: 100vw !important;
-        z-index: 1000;
-        top: 85% !important;
-        font-family: 'Arial';
-        display: flex;
-        justify-content: center;
-        left: 15% !important;
+        width: 90% !important;
     }
 
     .text1 {
@@ -190,67 +183,31 @@
         padding-left: 2vw;
         text-align: left;
         padding-top: 1vw;
-        line-height: 5.25vw
-    }
-
-    .card2 {
-        position: absolute;
-        z-index: 10;
-        top: 150%;
-        left: 15%;
-        display: flex;
-        justify-content: center;
+        line-height: 5.25%
     }
 
     .text2 {
         text-align: left;
         padding-left: 1.25vw;
         width: 90%;
-        line-height: 5.25vw;
+        line-height: 5.25%;
         padding-top: 1vw;
-    }
-
-    .card3 {
-        position: absolute;
-        z-index: 10;
-        top: 210%;
-        left: 15%;
-        display: flex;
-        justify-content: center;
     }
 
     .text3 {
         text-align: left;
         padding-left: 1.25vw;
         width: 90%;
-        line-height: 5.25vw;
+        line-height: 5.25%;
         padding-top: 1vw;
-    }
-
-    .card4 {
-        position: absolute;
-        z-index: 10;
-        top: 285%;
-        left: 15%;
-        display: flex;
-        justify-content: center;
     }
 
     .text4 {
         text-align: left;
         padding-left: 1.25vw;
         width: 90%;
-        line-height: 5.25vw;
+        line-height: 5.25%;
         padding-top: 1vw;
-    }
-
-    .card5 {
-        position: absolute;
-        z-index: 10;
-        top: 410%;
-        left: 15%;
-        display: flex;
-        justify-content: center;
     }
 
     .text5 {
@@ -258,16 +215,7 @@
         padding-left: 2vw;
         text-align: left;
         padding-top: 1vw;
-        line-height: 5.25vw
-    }
-
-    .card6 {
-        position: absolute;
-        z-index: 10;
-        top: 345%;
-        left: 15%;
-        display: flex;
-        justify-content: center;
+        line-height: 5.25%
     }
 
     .text6 {
@@ -275,7 +223,7 @@
         padding-left: 2vw;
         text-align: left;
         padding-top: 1vw;
-        line-height: 5.25vw
+        line-height: 5.25%
     }
 }
 
